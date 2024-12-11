@@ -11,8 +11,10 @@ const TextInput = () => {
 
     return (
         <div>
+            {/* A medida que vamos escribiendo en INPUT, va saliendo el texto en el párrafo,
+            a éste input se le ha añadido la función handleChange */}
             <input type="text" value={text} onChange={handleChange}></input>
-            <p>You typed: {text}</p>
+            <p>Tu texto es: {text}</p>
         </div>
     );
 };
